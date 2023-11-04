@@ -1,14 +1,21 @@
 variable "region" {
+  description = "The AWS region in which the resources will be created."
   type        = string
-  description = "AWS region for all resources."
+  default     = "us-east-1"
 }
 
-variable "label" {
+variable "availability_zone" {
+  description = "The availability zone where the resources will reside."
   type        = string
-  description = "Application label."
+  default     = "us-east-1a"
 }
-
-variable "app" {
+variable "ami" {
+  description = "The ID of the Amazon Machine Image (AMI) used to create the EC2 instance."
   type        = string
-  description = "Application name."
+  default     = "ami-05c13eab67c5d8861"
+}
+variable "instance_type" {
+  description = "The type of EC2 instance used to create the instance."
+  type        = string
+  default     = "t2.micro"
 }
