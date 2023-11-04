@@ -5,10 +5,10 @@
 # For more information, see https://www.terraform.io/docs/backends/types/remote.html
 terraform {
   cloud {
-    organization = "example-org-9c9cf6"
+    organization = "bjornl"
 
     workspaces {
-      name = "demo"
+      name = "learn-terraform-circleci"
     }
   }
 
